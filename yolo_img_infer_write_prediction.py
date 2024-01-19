@@ -36,10 +36,10 @@ def parse_args():
     #     '-nm', '--names_file', type=str, required=True,
     #     help='Path to the classes names file')
     parser.add_argument(
-        '-conf', '--confidence_score', type=float, default=0.5,
+        '-conf', '--confidence_score', type=float, default=0.3,
         help='Change for the confidence value')
     parser.add_argument(
-        '-nms', '--nms_score', type=float, default=0.3,
+        '-nms', '--nms_score', type=float, default=0.5,
         help='Change for the nms value')
     parser.add_argument(
         '-n', '--network_shape', type=int, default=416,
@@ -118,6 +118,3 @@ if __name__ == '__main__':
     base_folder = args.image_folder
     output_folder = args.output_folder
     main()
-
-
-# python yolo_img_infer_write_prediction.py -i ./1 -c ./yolov4-csp_ssp2_v3.cfg -m ./yolov4-csp_ssp2_v3.weights -n 512 -ca True

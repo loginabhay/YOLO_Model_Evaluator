@@ -31,7 +31,7 @@ def parse_args():
         '-o', '--output_folder', type=str, default='./generated_metrices',
         help='Path to the output folder')
     parser.add_argument(
-        '-s', '--save_output', type=bool, default=False,
+        '-s', '--save_output', type=bool, default=True,
         help='Save the generated metrices in the csv format')
     parser.add_argument(
         '-conf', '--confidence_score', type=float, default=0.3,
@@ -162,5 +162,3 @@ if __name__ == '__main__':
     THRESH_CONFIDENCE = args.confidence_score
     THRESH_IOU_CONFUSION = args.nms_score
     main()
-
-# python Evaluation_matrix_yolo.py -ip ./assets/test_prediction/ -ig ./assets/test_annotation/ -s True -nm ./assets/SmartSortClasses.txt

@@ -1,5 +1,5 @@
 # YOLO Model Evaluator
-Evaluates the yolo model and creates metrices required for detection model evaluation it can also generate the annotation from the detection model and save it as a text file in yolo format.
+Effortlessly run object detection on CPU using only OpenCV with this YOLO model evaluation tool. This tool is designed to evaluate the performance of YOLO models by generating essential metrics for detection model evaluation. Additionally, it provides the capability to generate annotations from the detection model and save them as text files in YOLO format. Simplify your model evaluation process with this straightforward and efficient solution.
 
 ## Installation:
 
